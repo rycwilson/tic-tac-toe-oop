@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="style-main.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src='app.js'></script>
+  </head>
+  <body>
+    <h1 class='title'>Tic-Tac-Toe</h1>
+
+    <div id='board'>
+
+      <!-- Wrap the players in a div so they can be stacked on time of
+      one another and be displayed inline with the reset button -->
+      <div class='players'>
+        <p id='player-X'>Player X </p>
+        <p id='player-O'>Player O </p>
+      </div>
+
+      <div class='reset'>
+        <button>Reset</button>
+      </div>
+
+      <br>
+
+      <div class='square'>
+        <p class='blank'></p>
+      </div>
+      <div class='square'>
+        <p class='blank'></p>
+      </div>
+      <div class='square'>
+        <p class='blank'></p>
+      </div>
+      <br>
+      <div class='square'>
+        <p class='blank'></p>
+      </div>
+      <div class='square'>
+        <p class='blank'></p>
+      </div>
+      <div class='square'>
+        <p class='blank'></p>
+      </div>
+      <br>
+      <div class='square'>
+        <p class='blank'></p>
+      </div>
+      <div class='square'>
+        <p class='blank'></p>
+      </div>
+      <div class='square'>
+        <p class='blank'></p>
+      </div>
+
+    </div>
+  </body>
+  <script>
+    var game = new Game();
+    game.view.attachListeners();
+  </script>
+</html>
